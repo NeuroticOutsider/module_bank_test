@@ -101,7 +101,7 @@
           font-size: 16px
           line-height: 28px
     &-features
-      max-width: 165px
+      max-width: 200px
       ul
         li
           display: flex
@@ -114,12 +114,63 @@
           margin-bottom: 10px
           div
             margin-right: 15px
+            max-width: 90px
           span
             display: inline-block
             border-bottom: 1px dotted #2773b9
             letter-spacing: -0.3px
-          img
+          .circle
+            display: inline-block
             width: 43px
+            height: 43px
+            position: relative
+            border-radius: 50%
+            margin-right: 0
+            &:after
+              border-radius: 50%
+              display: block
+              content: ""
+              background: #fff
+              position: absolute
+              left: 1px
+              top: 1px
+              height: 40px
+              width: 40px
+            &_1
+              background-image: linear-gradient(220deg, transparent 50%, #79BD6F 50%), linear-gradient(90deg, #ddd 50%, #79BD6F 50%)
+              &:before
+                content: '88'
+                font-size: 16px
+                color: #000
+                position: relative
+                z-index: 10
+                line-height: 40px
+            &_2
+              background-image: linear-gradient(270deg, transparent 50%, #79BD6F 50%), linear-gradient(90deg, #ddd 50%, #79BD6F 50%)
+              &:before
+                content: '100'
+                font-size: 16px
+                color: #000
+                position: relative
+                z-index: 10
+                line-height: 40px
+            &_3
+              background-color: #79BD6F
+              &:after
+                content: '1'
+                background-color: transparent
+                font-size: 22px
+                color: #ffffff
+                line-height: 25px
+                +regular
+              &:before
+                content: 'Класс'
+                font-size: 10px
+                color: #fff
+                position: relative
+                z-index: 10
+                line-height: 60px
+                +light
     &:after
       content: ''
       width: 50px
