@@ -1,0 +1,183 @@
+.payment
+  display: flex
+  justify-content: flex-end
+  position: relative
+  &__wrap
+    width: 900px
+    background-color: #fff
+    box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112)
+    position: relative
+  &__title
+    background: rgba(0, 0, 0, 0.0289572)
+    display: flex
+    min-height: 60px
+    align-items: center
+    padding-left: 30px
+    button
+      display: block
+      margin-right: 25px
+      position: relative
+      width: 20px
+      height: 20px
+      background-color: transparent
+      outline: none
+      border: none
+      transition: all .3s
+      transform: rotate(45deg)
+      &:after, &:before
+        content: ''
+        width: 20px
+        height: 2px
+        background: #2b2b2b
+        border-radius: 5px
+        z-index: 10
+        position: absolute
+      &:after
+        top: calc(50% - 1px)
+        left: calc(50% - 10px)
+      &:before
+        top: calc(50% - 1px)
+        left: calc(50% - 10px)
+        transform: rotate(90deg)
+      &:hover
+        opacity: 0.7
+    h2
+      +light
+      font-size: 24px
+      line-height: 28px
+      margin: 0
+  &__item
+    max-height: 585px
+    overflow: hidden
+    overflow-y: scroll
+  &__body
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 25px
+  &__total
+    font-size: 46px
+    line-height: 56px
+    +light
+    color: #CF4545
+    margin: 0
+  &__bill
+    +light
+    font-size: 16px
+    line-height: 22px
+    margin: 0
+    margin-bottom: 10px
+    span
+      color: #828A96
+  &__status
+    font-size: 11px
+    line-height: 13px
+    color: #ffffff
+    background-color: #81C624
+    padding: 3px 11px
+    border-radius: 125px
+  &__description
+    display: flex
+    padding: 25px 50px 18px 30px
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682), 0px 3px 10px rgba(0, 0, 0, 0.0869282)
+    margin-top: 15px
+    width: 545px
+    justify-content: space-between
+    position: relative
+    z-index: 2
+    background-color: #fff
+    &-list
+      max-width: 230px
+      h4
+        margin: 0
+        font-size: 20px
+        line-height: 23px
+        margin-bottom: 13px
+        +regular
+      ul
+        li
+          +light
+          font-size: 16px
+          line-height: 28px
+    &-features
+      max-width: 165px
+      ul
+        li
+          display: flex
+          justify-content: flex-end
+          align-items: center
+          text-align: center
+          font-size: 9px
+          line-height: 13px
+          color: #2773b9
+          margin-bottom: 10px
+          div
+            margin-right: 15px
+          span
+            display: inline-block
+            border-bottom: 1px dotted #2773b9
+            letter-spacing: -0.3px
+          img
+            width: 43px
+    &:after
+      content: ''
+      width: 50px
+      height: 40px
+      background-color: #fff
+      background-image: url('../img/svg/corner.svg')
+      position: absolute
+      top: -10px
+      right: -18px
+      background-position: -10% 110%
+      background-repeat: no-repeat
+  &__explanation
+    background: #F2F2F2
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 4px 15px rgba(0, 0, 0, 0.0869282), 0px 2px 3px rgba(0, 0, 0, 0.0651891)
+    width: 545px
+    position: relative
+    padding: 23px 24px 20px 30px
+    padding-bottom: 0
+    margin-bottom: 20px
+    p
+      margin: 0
+      margin-bottom: 20px
+      font-size: 16px
+      line-height: 20px
+  &__commission
+    width: 545px
+    p
+      margin: 0
+      margin-bottom: 15px
+      font-size: 12px
+      line-height: 16px
+      color: #808080
+  &__buttons
+    background: #FFFFFF
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282)
+    z-index: 10
+    position: relative
+    display: flex
+    justify-content: center
+    &-wrap
+      width: 545px
+      padding: 20px 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .btn
+        outline: none
+        background-color: transparent
+        display: flex
+        align-items: center
+        border: none
+        transition: all .3s
+        img
+          width: 22px
+          display: block
+          margin-right: 10px
+        span
+          font-size: 14px
+          line-height: 16px
+        &:hover
+          opacity: 0.7
